@@ -12,7 +12,7 @@ src_bar.addEventListener("click", () => {
   fb_logo.style.display = "none";
   src_bk_arrow.style.display = "block";
 
-  part1.style.width= "320px";
+  part1.style.width = "320px";
   part1.style.boxShadow = "2px 0px 8px #00000031";
   part1.style.zIndex = "1";
   part1.style.backgroundColor = "#fff";
@@ -23,7 +23,7 @@ src_bar.addEventListener("click", () => {
   src_in.style.width = "100%";
 });
 
-src_bk_arrow.addEventListener("click", ()=>{
+src_bk_arrow.addEventListener("click", () => {
   console.log("bk was clicked");
   src_icon.style.display = "block";
   fb_logo.style.display = "block";
@@ -31,8 +31,7 @@ src_bk_arrow.addEventListener("click", ()=>{
   src_bar.style.width = "236px";
   src_sugg.style.display = "none";
   part1.style.boxShadow = "";
-
-})
+});
 
 // navbar part 2
 
@@ -46,6 +45,11 @@ let more = document.querySelector("#more");
 
 function btnBrdrSwitch(obj) {
   // obj.children[2].style.display="none";
+  if (obj == groups) {
+    groups.children[1].style.border = "2px solid #0866FF";
+  } else {
+    groups.children[1].style.border = "2px solid #6f747b";
+  }
   obj.style.borderBottom = "3px solid #0866FF";
   obj.style.borderColor = "#0866FF";
   obj.style.color = "#0866FF";
@@ -78,3 +82,59 @@ more.addEventListener("click", function () {
   btnBrdrSwitch(this, true);
 });
 
+let part3 = document.querySelector(".part3");
+let plus = document.querySelector("#plus");
+let menu = document.querySelector("#menu");
+let sms = document.querySelector("#sms");
+let notifi = document.querySelector("#notifi");
+let account = document.querySelector("#account");
+let sms_notifi = document.querySelector("#sms_notifi");
+let notifi_notifi = document.querySelector("#notifi_notifi");
+
+function btnPart3(obj) {
+  obj.children[0].style.color = "#0866FF";
+  if (obj == menu) {
+    for (item of obj.children[0].children) {
+      console.dir(item);
+      item.style.backgroundColor = "#0866FF";
+    }
+  }
+  for (let item of part3.children) {
+    if (obj != item) {
+      item.children[0].style.color = "#000";
+    }
+    if (obj != menu) {
+      for (i of menu.children[0].children) {
+        i.style.backgroundColor = "#000";
+      }
+    }
+  }
+}
+plus.addEventListener("click", function () {
+  btnPart3(this, true);
+});
+menu.addEventListener("click", function () {
+  btnPart3(this, true);
+});
+sms.addEventListener("click", function () {
+  btnPart3(this, true);
+  sms_notifi.parentElement.style.display = "none";
+});
+notifi.addEventListener("click", function () {
+  btnPart3(this, true);
+  notifi_notifi.parentElement.style.display = "none";
+});
+
+function notification(obj) {
+  let randNum = Math.floor(Math.random() * 12);
+  console.dir(obj);
+  if (randNum > 9) {
+    obj.parentElement.style.display = "block";
+    obj.innerText = "9+";
+  } else if (randNum > 0) {
+    obj.parentElement.style.display = "block";
+    obj.innerText = `${randNum}`;
+  }
+}
+notification(sms_notifi);
+notification(notifi_notifi);

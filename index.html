@@ -1,95 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Facebook</title>
-    <link rel="icon" type="image/png" href="image/fb_logo.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div id="src_sugg"></div>
-      <div class="navbar">
-        <div class="part1">
-          <img class="fb_logo" src="image\fb_logo.png" alt="Error" />
-          <i class="fa-solid fa-arrow-left" id="src_bk_arrow"></i>
-          <div class="src_bar">
-            <label for="scr_in" class="src_icon">
-              <i id="src_logo" class="fa-solid fa-magnifying-glass"></i>
-            </label>
-            <input
-              id="src_in"
-              placeholder="Search Facebook"
-              class="src_in"
-              type="text"
-            />
-          </div>
-        </div>
 
-        <div class="part2">
-          <a id="home" href="#">
-            <span class="notifi_dot"><p id="home_notifi">1</p></span>
-            <i class="fa-solid fa-house bt"></i>
-            <span class="home_l">Home</span>
-          </a>
-          <a id="friends" href="#">
-            <span class="notifi_dot"><p id="friend_notifi"></p></span>
-            <i class="fa-solid fa-user-group bt"></i>
-            <span class="friends_l">Friends</span>
-          </a>
-          <a id="video" href="#">
-            <span class="notifi_dot"><p id="video_notifi"></p></span>
-            <i class="fa-brands fa-youtube bt"></i>
-            <span class="video_l">Video</span>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Facebook</title>
+  <link rel="icon" type="image/png" href="image/fb_logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
 
-          <a id="store" href="#">
-            <span class="notifi_dot"><p id="store_notifi"></p></span>
-            <i class="fa-solid fa-store bt"></i>
-            <span class="store_l">Marketplace</span>
-          </a>
-
-          <a id="groups" href="#">
-            <span class="notifi_dot"><p id="game_notifi"></p></span>
-            <i class="fa-solid fa-people-group"></i>
-            <span class="groups_l">Groups</span>
-          </a>
-
-          <a id="more" href="#">
-            <span class="notifi_dot"><p id="more"></p></span>
-            <i class="fa-solid fa-bars"></i>
-            <span class="more_l">More</span>
-          </a>
-        </div>
-
-        <div class="part3">
-          <a id="plus" href="#" >
-            <i class="fa-solid fa-plus"></i>
-          </a>
-          <a id="menu" href="#">
-             <img src="https://cdn.icon-icons.com/icons2/1129/PNG/512/buttonsymbolofninedots_80014.png" alt="">
-            <span class="notifi_dot_p3"><p id="menu_notifi"></p></span>
-          </a>
-          <a id="sms" href="#">
-            <i class="fa-brands fa-facebook-messenger"></i>
-            <span class="notifi_dot_p3"><p id="sms_notifi"></p></span>
-          </a>
-          <a id="notifi" href="#">
-            <i class="fa-solid fa-bell"></i>
-            <span class="notifi_dot_p3"><p id="notifi_notifi"></p></span>
-          </a>
-          <a id="account" href="https://www.facebook.com">
-            <!-- <i class="fa-solid fa-user"></i> -->
-            <i id="acc_arrow" class="fa-solid fa-chevron-down"></i>
-          </a>
+<body>
+  <div class="container">
+    <div id="src_sugg"></div>
+    <div class="navbar">
+      <div class="part1">
+        <img class="fb_logo" src="image\fb_logo.png" alt="Error" />
+        <i class="fa-solid fa-arrow-left" id="src_bk_arrow"></i>
+        <div class="src_bar">
+          <label for="scr_in" class="src_icon">
+            <i id="src_logo" class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <input id="src_in" placeholder="Search Facebook" class="src_in" type="text" />
         </div>
       </div>
+
+      <div class="part2">
+        <a id="home" href="#">
+          <span class="notifi_dot">
+            <p id="home_notifi">1</p>
+          </span>
+          <i class="fa-solid fa-house bt"></i>
+          <span class="home_l">Home</span>
+        </a>
+        <a id="friends" href="#">
+          <span class="notifi_dot">
+            <p id="friend_notifi"></p>
+          </span>
+          <i class="fa-solid fa-user-group bt"></i>
+          <span class="friends_l">Friends</span>
+        </a>
+        <a id="video" href="#">
+          <span class="notifi_dot">
+            <p id="video_notifi"></p>
+          </span>
+          <i class="fa-brands fa-youtube bt"></i>
+          <span class="video_l">Video</span>
+        </a>
+
+        <a id="store" href="#">
+          <span class="notifi_dot">
+            <p id="store_notifi"></p>
+          </span>
+          <i class="fa-solid fa-store bt"></i>
+          <span class="store_l">Marketplace</span>
+        </a>
+
+        <a id="groups" href="#">
+          <span class="notifi_dot">
+            <p id="game_notifi"></p>
+          </span>
+          <i class="fa-solid fa-people-group"></i>
+          <span class="groups_l">Groups</span>
+        </a>
+
+        <a id="more" href="#">
+          <span class="notifi_dot">
+            <p id="more"></p>
+          </span>
+          <i class="fa-solid fa-bars"></i>
+          <span class="more_l">More</span>
+        </a>
+      </div>
+
+      <div class="part3">
+        <a id="plus" href="#">
+          <i class="fa-solid fa-plus"></i>
+          <span class="plus_l">Creat</span>
+        </a>
+        <a id="menu" href="#">
+          <div class="menu_i">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <!-- <img src="https://cdn.icon-icons.com/icons2/1129/PNG/512/buttonsymbolofninedots_80014.png" alt=""> -->
+          <span class="menu_l">Menu</span>
+        </a>
+        <a id="sms" href="#">
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <span class="notifi_dot_p3">
+            <p id="sms_notifi"></p>
+          </span>
+          <span class="sms_l">Messenger</span>
+        </a>
+        <a id="notifi" href="#">
+          <i class="fa-solid fa-bell"></i>
+          <span class="notifi_dot_p3">
+            <p id="notifi_notifi" >6</p>
+          </span>
+          <span class="notifi_l">Notifications</span>
+        </a>
+
+
+
+        <a id="account" href="https://www.facebook.com">
+          <!-- <i class="fa-solid fa-user"></i> -->
+          <i id="acc_arrow" class="fa-solid fa-chevron-down"></i>
+          <span class="account_l">Account</span>
+        </a>
+      </div>
     </div>
-  </body>
-  <script src="app.js"></script>
+  </div>
+</body>
+<script src="app.js"></script>
+
 </html>
