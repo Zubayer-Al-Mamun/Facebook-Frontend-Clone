@@ -6,6 +6,8 @@ let fb_logo = document.querySelector(".fb_logo");
 let src_bk_arrow = document.querySelector("#src_bk_arrow");
 let part1 = document.querySelector(".part1");
 let src_sugg = document.querySelector("#src_sugg");
+var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+console.log(width);
 
 src_bar.addEventListener("click", () => {
   src_icon.style.display = "none";
@@ -24,7 +26,6 @@ src_bar.addEventListener("click", () => {
 });
 
 src_bk_arrow.addEventListener("click", () => {
-  console.log("bk was clicked");
   src_icon.style.display = "block";
   fb_logo.style.display = "block";
   src_bk_arrow.style.display = "none";
@@ -95,7 +96,6 @@ function btnPart3(obj) {
   obj.children[0].style.color = "#0866FF";
   if (obj == menu) {
     for (item of obj.children[0].children) {
-      console.dir(item);
       item.style.backgroundColor = "#0866FF";
     }
   }
@@ -127,7 +127,6 @@ notifi.addEventListener("click", function () {
 
 function notification(obj) {
   let randNum = Math.floor(Math.random() * 12);
-  console.dir(obj);
   if (randNum > 9) {
     obj.parentElement.style.display = "block";
     obj.innerText = "9+";
