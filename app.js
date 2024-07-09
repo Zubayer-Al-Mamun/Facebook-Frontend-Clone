@@ -4,34 +4,63 @@ let src_bar = document.querySelector(".src_bar");
 let src_icon = document.querySelector(".src_icon");
 let fb_logo = document.querySelector(".fb_logo");
 let src_bk_arrow = document.querySelector("#src_bk_arrow");
+let part0 = document.querySelector("#part0");
 let part1 = document.querySelector(".part1");
-let src_sugg = document.querySelector("#src_sugg");
+// let src_sugg = document.querySelector("#src_sugg");
 var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-console.log(width);
 
 src_bar.addEventListener("click", () => {
-  src_icon.style.display = "none";
-  fb_logo.style.display = "none";
   src_bk_arrow.style.display = "block";
-
-  part1.style.width = "320px";
-  part1.style.boxShadow = "2px 0px 8px #00000031";
-  part1.style.zIndex = "1";
-  part1.style.backgroundColor = "#fff";
-
-  src_sugg.style.display = "block";
-  src_bar.style.width = "249px";
+  fb_logo.style.display = "none";
+  if(screen.width > 1259){
+    src_icon.style.display = "none";
+    // src_in.style.width = "248px";
+      // src_bar.style.width = "148px";
+  }
   src_in.style.display = "block";
   src_in.style.width = "100%";
+  src_bar.style.width = "248px";
+  part0.style.height = "518px";
+  part0.style.width = "320px";
+  part0.style.backgroundColorolor = "red";
+  part0.style.boxShadow = "1px 8px 10px 1px #00000031";
+  part0.style.zIndex = "5";
+  
+
+//   part1.style.boxShadow = "2px 0px 8px #00000031";
+//   part1.style.zIndex = "1";
+//   part1.style.backgroundColor = "#fff";
+//   if(screen.width < 1259){
+//     src_in.style.display = "none";
+//     console.log("active");
+//   }
+//   else{
+//     src_sugg.style.display = "block";
+//     part1.style.width = "320px";
+//     src_in.style.display = "block";
+//     src_in.style.width = "248px";
+//   }
 });
 
 src_bk_arrow.addEventListener("click", () => {
+//   src_sugg.style.display = "none";
   src_icon.style.display = "block";
   fb_logo.style.display = "block";
   src_bk_arrow.style.display = "none";
-  src_bar.style.width = "236px";
-  src_sugg.style.display = "none";
-  part1.style.boxShadow = "";
+  src_in.style.width = "210px";
+  if(screen.width <1259){
+  }
+  part0.style.height = "56px";
+  part0.style.width = "320px";
+  part0.style.boxShadow = "";
+
+//   part1.style.boxShadow = "";
+  // src_in.style.width = "210px"; 
+//   if(screen.width < 1259){
+//     src_bar.style.width = "40px";
+//     src_in.style.display = "none";
+//     src_in.style.color = "red";
+//   }
 });
 
 // navbar part 2
@@ -137,3 +166,10 @@ function notification(obj) {
 }
 notification(sms_notifi);
 notification(notifi_notifi);
+
+
+
+
+//-----------Manin body part 1
+let p4_p1 = document.querySelector(".p4_p1");
+let see_more = document.querySelector(".see_more");
