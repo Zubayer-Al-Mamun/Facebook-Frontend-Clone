@@ -442,7 +442,7 @@ body {
   height: 40px;
   width: 40px;
   border: 1px solid #9cb2c862;
-  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/414182887_907138034423836_1851719359084425897_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF-qvwpczhqsCMtsy-7vvsLjJSr1cvcF7aMlKvVy9wXtnnV62g816dCvWxPk-5Ft7qybl7BVPluwUzsJY2AmRgd&_nc_ohc=zodh7lSAPPIQ7kNvgFa4Z5m&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYC5u82eXs1NxUvJWggTNpfTjeZ48oyOWsCYsq7BPnhqJQ&oe=668EB347);
+  background-image: url(https://e7.pngegg.com/pngimages/980/304/png-clipart-computer-icons-user-profile-avatar-heroes-silhouette-thumbnail.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -549,12 +549,16 @@ body {
   background-color: #f8f5f5;
 }
 .part4{
+  position: absolute;
+  left: 0;
+  top: 0;
   width:300px ;
   height:100%;
-  z-index: -7;
+  z-index: 0;
   overflow: scroll;
   scrollbar-width: none;
   padding: 8px 10px 8px 10px;
+  border: 1px solid black;
 }
 
 .p4_p1, .p4_p2{
@@ -578,7 +582,7 @@ body {
   width: 40px;
   height: 40px;
   margin: 0 5px 0 0;
- background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-1/414182887_907138034423836_1851719359084425897_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=109&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeF-qvwpczhqsCMtsy-7vvsLjJSr1cvcF7aMlKvVy9wXtnnV62g816dCvWxPk-5Ft7qybl7BVPluwUzsJY2AmRgd&_nc_ohc=5ZGsPobwskAQ7kNvgFM-FdU&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYDVNi_zRvAHI0eyvVxdu07JSUfz7IIBDkYjnGcTDkFkEA&oe=66935901);
+ background-image: url(https://e7.pngegg.com/pngimages/980/304/png-clipart-computer-icons-user-profile-avatar-heroes-silhouette-thumbnail.png);
  background-size: cover;
 }
 .p4_p1 a{
@@ -775,4 +779,129 @@ body {
 .terms a:hover{
   border-radius: 4px;
   background-color: #fff;
+}
+
+
+
+/* ------------------- Part5 */
+
+.part6{
+  width:300px ;
+  height:100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  padding: 8px 10px 8px 10px;
+  position: absolute;
+  right: 0;
+  border: 1px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  cursor: no-drop;
+}
+.ur_page, .friend_req, .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.467);
+}
+.ur_page a{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.friend_req a{
+  width: 50px;
+  height: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
+.friend_req a:hover{
+  background-color:rgb(222, 227, 230) ;
+  border-radius: 6px;
+}
+.contacts a{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.contacts a:hover{
+  background-color:rgb(222, 227, 230) ;
+  padding: 5px;
+  border-radius: 50%;
+}
+.ur_page a:hover{
+  background-color:rgb(222, 227, 230) ;
+  border-radius: 50%;
+}
+.ur_page i{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.467);
+}
+.contacts i{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.467);
+}
+
+.cont_src{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page_name{
+  padding: 1px ;
+  display: flex;
+  align-items: center;
+}
+/* .page_name2{
+  display: flex;
+  flex-direction: column;
+} */
+.page_name a{
+  color: black;
+  text-decoration: none;
+} 
+.page_logo{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 5px 10px;
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/274939799_103546752285222_7076492467597715226_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE09z5aytLszXaGfqO33zLmcWiCrLx-ebJxaIKsvH55suPnEmDWoPX96sTOeaXltwP0niKH4npKw__bJxi6pq_E&_nc_ohc=jkM0poHMftQQ7kNvgH87tAg&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYADNPO43QuBpG62X0Dsm8aS6AFpIIcXbXxUPKQd_lDYUA&oe=6694C8C8);
+  background-size: cover;
+}
+
+.swt_page{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  padding: 5px 5px 5px 15px;
+  color: rgba(0, 0, 0, 0.542);
+}
+.cret_promo{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 5px 0 10px 15px;
+  color: rgba(0, 0, 0, 0.542);
+}
+
+
+.req_cont{
+  width: 100%;
+  height: 110px;
+  background-image: url(/image/req.png);
+  background-size: cover;
 }
