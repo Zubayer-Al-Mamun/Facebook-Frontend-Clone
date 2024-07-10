@@ -172,4 +172,33 @@ notification(notifi_notifi);
 
 //-----------Manin body part 1
 let p4_p1 = document.querySelector(".p4_p1");
-let see_more = document.querySelector(".see_more");
+let see_more1 = document.querySelector(".see_more");
+let p4_p2 = document.querySelector(".p4_p2");
+let see_more2 = document.querySelector(".see_more2");
+let see_more_key1 = false;
+let see_more_key2 = false;
+see_more1.addEventListener("click", ()=>{
+  if(see_more_key1 == false){
+    see_more_key1 = true;
+    p4_p1.style.height = "auto";
+    see_more1.children[1].innerText = "See less";
+  }
+  else{
+    see_more_key1 = false;
+    p4_p1.style.height = "325px";
+    see_more1.children[1].innerText = "See more";
+  }
+  
+})
+see_more2.addEventListener("click", ()=>{
+  if(see_more_key2 == false){
+    see_more_key2 = true;
+    p4_p2.style.height = "auto";
+    see_more2.children[1].innerText = "See less";
+  }
+  else{
+    see_more_key2 = false;
+    p4_p2.style.height = "325px";
+    see_more2.children[1].innerText = "See more";
+  }
+})

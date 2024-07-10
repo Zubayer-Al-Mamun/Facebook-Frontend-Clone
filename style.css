@@ -550,7 +550,7 @@ body {
 }
 .part4{
   width:300px ;
-  height: 100%;
+  height:100%;
   z-index: -7;
   overflow: scroll;
   scrollbar-width: none;
@@ -592,6 +592,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   color: black;
+  cursor: no-drop;
 }
 .p4_p1 a:hover{
   background-color: rgb(222, 227, 230);
@@ -602,9 +603,20 @@ body {
   color: rgb(57, 86, 166);
 }
 .see_more{
+  width: 100%;
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 5px;
   background-color: #f8f5f5;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.see_more:hover{
+  border-radius: 10px 0 0 10px;
+  background-color: rgb(222, 227, 230);
 }
 .see_more div i{
   font-size: 13px;
@@ -615,24 +627,152 @@ body {
 }
 
 
+
+
+
+/*                 p4_p2  */
+
 .p4_p2{
   overflow: hidden;
-  padding-top: 10px;
   position: relative;
 }
 .p4_p2:hover{
   .shortcuts a{
-    display: block;
+    opacity: 100;
   }
 }
 .shortcuts{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.shortcuts h3{
+  margin: 12px 0 5px 8px;
+  color: rgba(0, 0, 0, 0.549);
 }
 .shortcuts a{
   text-decoration: none;
   margin-right: 10px;
   color: blue;
-  display: none;
+  opacity: 0;
+}
+
+.p4_p2 a:hover{
+  background-color: rgb(222, 227, 230);
+}
+
+.p4_p2 a div{
+  width: 28px;
+  height: 28px;
+  margin: 5px;
+}
+.p4_p2  a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px 0 0 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.shortcuts a{
+  text-decoration: none;
+  margin-right: 10px;
+  color: blue;
+  opacity: 0;
+  padding: 5px;
+  border-radius: 4px;
+}
+.short_img1{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/438161201_122142515270208852_265347597185248968_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeEJQMnj4ajm7Wuf2vQuFbvlp6WCbgvat8CnpYJuC9q3wOTKxdzn_mG7LxP4j6ij3DNhAk7UYQZG3o0gK_GzXboO&_nc_ohc=7Wdfj7HGzO4Q7kNvgF1BnIy&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYBhzvhU5sroJZs2a144dBOHQSlWtnZIbp-pECEBwH67Cw&oe=6693E548);
+  background-size: cover;
+}
+.short_img2{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t1.6435-9/175900048_314687243346132_4726928861916839370_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=25d718&_nc_eui2=AeEAhoTglWkjOeo0mSX70tNajUz5Vrc4_rONTPlWtzj-s417EU_3G9XqweSdlaR5BZFVErkVJ-HEgLL32-HzZG4o&_nc_ohc=tVPCAI8cZlQQ7kNvgEkKRrh&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYAXtsFLeEA6cJUancHXIGxd_CnXrkpYAcrvTZ9YFo1H2g&oe=66B575DD);
+  background-size: cover;
+}
+.short_img3{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/428659938_784689280374336_6871603419663718778_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeHUxbtl6o1vFY7x2sgPbRxhSqcvV-b6byZKpy9X5vpvJg8ZOGFXDAv23544AOfchvHGfhfmwR4u6YN4IAb98Zs3&_nc_ohc=8hvGGMI7keAQ7kNvgGFxf-X&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYC6Ymv9Nv6fH-WLqpOLdS9996EzpXECI2RwgvLT1f6FCw&oe=6693E26A);
+  background-size: cover;
+}
+.short_img4{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/275151704_103546678951896_3872065952096780800_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEqB1k5vhQctXcFvkHPu_mt7duO6y26AKzt247rLboArKNUac4KOoh7gWf4F_hT43mu5YzblrLPu58ZzRfwMVt2&_nc_ohc=KYW-bw8uKmAQ7kNvgFgti5R&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYCqFCqB3RCY-wjrmBEE9GEY1uewcuUJSXCjHlfsBkEtmg&oe=6693D599);
+  background-size: cover;
+}
+.short_img5{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/420637473_690106836663383_3683406527638665713_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeHVx_uLzYQz0ftUGc9ZFp6GS7_ZBtFSjwVLv9kG0VKPBbPG3b9LY5rwQFZZvNENh6rhym6inML09p89KEMjNAM7&_nc_ohc=XytMjaOkRYAQ7kNvgECyE7h&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYD-0uxGad-E3yp8YqBduTNLdSHO-UcbGvce1U6X0kw-GQ&oe=6693ED0C);
+  background-size: cover;
+}
+.short_img6{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/391676669_831845912064213_2315217767949700907_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeEPwGJyQEzmG6tXxKZmpKx4oF4gMWb7ocygXiAxZvuhzMf1b8MwHRKSAOwADh_TX3Vj13IG-9-JxkgiQ_KXQhGE&_nc_ohc=t5AqMqjnm2MQ7kNvgF41_2k&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYAK5ekkL_t_IsicrOj8TPrKHcblR7KpOuFMJSyfTsZxBw&oe=6693F34B);
+  background-size: cover;
+}
+.short_img7{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/273009266_1718138661850378_5260173826133608269_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeGZi055w7ksced8dTG-MEzis2PdDpHaZA2zY90OkdpkDUt13kGiD18VjdYddsuOWT8J9QEENIYvgC6yhGZPjzhE&_nc_ohc=pKLVhHVS7VYQ7kNvgEjrERp&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYDS5K6Y_Wwv6uEy-93H5--9ih2Br59hMxtQVAkzsFPojA&oe=6693FEC6);
+  background-size: cover;
+}
+.short_img8{
+  background-image: url(https://scontent.fbzl5-1.fna.fbcdn.net/v/t39.30808-6/284381963_1720803201586278_3191521553909597218_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeFmcVBo2D8j50NghZIgG8DJCPdqKYFjpz4I92opgWOnPjRyX9AahG6-mod0079vM6R6C4QyPs3CBcIluxK2MdeF&_nc_ohc=7Q64JwkJyy0Q7kNvgEBg6am&_nc_ht=scontent.fbzl5-1.fna&oh=00_AYDHPXco-VaWY4M3nPGe1mAxNWIAel9XsulTR9pDDW0lhQ&oe=6693D84C);
+  background-size: cover;
+}
+.see_more2 div i{
+  font-size: 13px;
+  color: black;
+  background-color: rgb(109, 176, 188);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.p4_p2 a p{
+  line-height: 23px;
+  padding: 5px;
+}
+.see_more2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  position: absolute;
+  bottom: 35px;
+  background-color: #f8f5f5;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.see_more2:hover{
+  background-color: rgb(222, 227, 230);
+}
+.see_more2 div{
+  width: 30px;
+  height: 30px;
+  margin: 8px 3px 8px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.terms{
+  position: absolute;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.528);
+  background-color: #f8f5f5;
+  width: 100%;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+.terms a{
+  display: inline;
+  color: rgba(0, 0, 0, 0.528);
+}
+.terms a:hover{
+  border-radius: 4px;
+  background-color: #fff;
 }
