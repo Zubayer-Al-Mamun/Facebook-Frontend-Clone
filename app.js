@@ -202,3 +202,30 @@ see_more2.addEventListener("click", ()=>{
     see_more2.children[1].innerText = "See more";
   }
 })
+let stryAll = document.querySelectorAll(".story_card");
+console.log(stryAll);
+
+
+// for(let stry of stryAll){
+//   stry.style.backgroundImage = "url(https://cataas.com/cat)";
+
+//   console.log(stry);
+// }
+for (let i=0; i<stryAll.length; i++) { 
+  task(i); 
+  } 
+  
+  function task(i) {
+    if(i/2 == 0 ){
+      setTimeout(function() {
+        stryAll[i].style.backgroundImage = "url(https://cataas.com/cat)";
+      }, 2000 * i);
+      console.log(i);
+    }
+    else{
+      setTimeout(function() {
+        stryAll[i].style.backgroundImage = "url(https://cataas.com/cat/says/hello)";
+      }, 2000 * i);
+      console.log(i);
+    }
+  } 
