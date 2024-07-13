@@ -533,9 +533,10 @@ body {
   position: relative;
   height: 92vh;
   width: 100%;
-  background-color: #f8f5f5;
+  background-color: #f0f2f5;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .part4 {
@@ -769,10 +770,20 @@ body {
 }
 
 /* ------------------- Part5 */
-
+.part5_parent{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  scrollbar-width: none;
+}
 .part5 {
   width: 600px;
   padding: 25px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #day_story {
@@ -794,8 +805,9 @@ body {
   border-radius: 10px;
   width: 140px;
   height: 100%;
-  border: 1px solid gray;
   position: relative;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.176);
 }
 .cre_stry_img {
   width: 138px;
@@ -841,7 +853,6 @@ body {
 .story_card {
   width: 140px;
   height: 100%;
-  border: 1px solid rgb(206, 32, 32);
   color: #fff;
   border-radius: 10px;
   position: relative;
@@ -851,13 +862,19 @@ body {
   align-items: center;
   background-size: cover;
 }
-.card3{
-  
-}
-.story_card img {
-  width: 100%;
 
+.stroy_img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
+.story_card:hover {
+  .story_card{
+    transform: scale(1.02);
+    transition: 0.2s;
+  }
+}
+
 .stry_pro {
   width: 40px;
   height: 40px;
@@ -880,6 +897,96 @@ body {
 /* background-image: url(https://cataas.com/cat); */
 background-size: cover;
 }
+.posts{
+  width: 500px;
+  /* border: 1px solid black; */
+  margin:20px 0 0 0 ;
+}
+.create_post{
+  height: 125px;
+  width: 100%;
+  padding: 10px 16px 6px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.187);
+}
+.self{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+.self_pic{
+  width: 45px;
+  height: 45px;
+  background-image: var(--profile_pic_link);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.w_ur_mind{
+  height: 100%;
+  width: 90%;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background-color: #f0f2f5;
+  font-size: 25px;
+  padding-left: 10px;
+}
+.w_ur_mind::placeholder{
+  outline: none;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.521);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.live_photo_feeling{
+  margin-top: 10px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.live_photo_feeling a{
+  width: 33%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.live_photo_feeling i{
+  font-size: 25px;
+  margin-right: 5px;
+}
+.live_photo_feeling p{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.564);
+}
+
+
+/* .src_in {
+  height: 40px;
+  width: 210px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-left: 4px;
+  padding-left: 5px;
+  background-color: transparent;
+  transition: 0.2s;
+}
+.src_in::placeholder {
+  font-size: 0.9rem;
+} */
+
+
 
 /* --------------------------Part6 */
 .part6 {
@@ -1013,10 +1120,11 @@ background-size: cover;
   }
   .part5_parent {
     width: 70%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center;  */
   }
 }
+
 @media (max-width: 899px) {
   .part6 {
     display: none;

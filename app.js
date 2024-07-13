@@ -203,29 +203,14 @@ see_more2.addEventListener("click", ()=>{
   }
 })
 let stryAll = document.querySelectorAll(".story_card");
-console.log(stryAll);
+console.log(stryAll[0]);
+stryAll[0].style.backgroundImage = "url(https://picsum.photos/500/300)";
+stryAll[0].children[0].style.backgroundImage = "url(https://xsgames.co/randomusers/avatar.php?g=male)";
+stryAll[1].style.backgroundImage = "url(https://picsum.photos/200/300)";
+stryAll[1].children[0].style.backgroundImage = "url(https://xsgames.co/randomusers/avatar.php?g=female)";
+stryAll[2].style.backgroundImage = "url(https://picsum.photos/200)";
+stryAll[2].children[0].style.backgroundImage = "url(https://xsgames.co/randomusers/avatar.php?g=pixel)";
+stryAll[3].style.backgroundImage = "url(https://picsum.photos/300/200)";
+stryAll[3].children[0].style.backgroundImage = "url(https://picsum.photos/300/200)";
 
 
-// for(let stry of stryAll){
-//   stry.style.backgroundImage = "url(https://cataas.com/cat)";
-
-//   console.log(stry);
-// }
-for (let i=0; i<stryAll.length; i++) { 
-  task(i); 
-  } 
-  
-  function task(i) {
-    if(i/2 == 0 ){
-      setTimeout(function() {
-        stryAll[i].style.backgroundImage = "url(https://cataas.com/cat)";
-      }, 2000 * i);
-      console.log(i);
-    }
-    else{
-      setTimeout(function() {
-        stryAll[i].style.backgroundImage = "url(https://cataas.com/cat/says/hello)";
-      }, 2000 * i);
-      console.log(i);
-    }
-  } 
