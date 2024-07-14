@@ -182,11 +182,14 @@ see_more1.addEventListener("click", ()=>{
     see_more_key1 = true;
     p4_p1.style.height = "auto";
     see_more1.children[1].innerText = "See less";
+    see_more1.children[0].style.transform = "rotate(180deg)";
+
   }
   else{
     see_more_key1 = false;
     p4_p1.style.height = "325px";
     see_more1.children[1].innerText = "See more";
+    see_more1.children[0].style.transform = "rotate(0deg)";
   }
   
 })
@@ -195,11 +198,13 @@ see_more2.addEventListener("click", ()=>{
     see_more_key2 = true;
     p4_p2.style.height = "auto";
     see_more2.children[1].innerText = "See less";
+    see_more2.children[0].style.transform = "rotate(180deg)";
   }
   else{
     see_more_key2 = false;
     p4_p2.style.height = "325px";
     see_more2.children[1].innerText = "See more";
+    see_more2.children[0].style.transform = "rotate(0deg)";
   }
 })
 let stryAll = document.querySelectorAll(".story_card");
