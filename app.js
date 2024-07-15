@@ -219,3 +219,12 @@ stryAll[3].style.backgroundImage = "url(https://picsum.photos/300/200)";
 stryAll[3].children[0].style.backgroundImage = "url(https://picsum.photos/300/200)";
 
 
+
+let  inf = document.querySelector(".inf");
+setTimeout(() => {
+  inf.style.display = "flex";
+}, 5000);
+
+inf.addEventListener("click", ()=>{
+  inf.style.display = "none";
+})
